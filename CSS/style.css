@@ -1,0 +1,298 @@
+@import url("https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&display=swap");
+* {
+  margin: 0;
+  font-family: "Alegreya", serif;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+  font-weight: lighter;
+}
+:root{
+  --primary:#fff;
+  --secondary-light:#c7c1c1;
+  --secondary-dark:#484540;
+  --secondary-dark-footer:#353330;
+  --secondary-border:#4f4b44;
+  --bgcolor:#8e7754;
+}
+a{
+  color: var(--secondary-light);
+  text-decoration: none;
+}
+h1 {
+  font-size: 75px;
+  margin: 20px 0;
+  font-weight: lighter;
+}
+li{
+  list-style-type: none;
+  padding-top: 30px;
+}
+img {
+  width: 100%;
+  height: 100%;
+}
+.header,
+.about,
+.location,
+.baking,
+.contact {
+  overflow: auto;
+}
+
+.nav-img {
+  width: 12%;
+}
+.header-nav-bar {
+  color: var(--primary);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  position: fixed;
+  right: 0;
+  left: 0;
+  background-color: rgba(19, 17, 17, 0.5);
+}
+.nav-content li {
+  padding-top: 0;
+  padding-right: 20px;
+  font-size: 22px;
+}
+.nav-content {
+  display: flex;
+}
+.header {
+  height: 100vh;
+  /* background-color: aqua; */
+  background-image: url(../images/bakery-background.jpg);
+  background-position: center center;
+  background-size: cover;
+}
+.header .overlay {
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.header .header-content {
+  /* background-color: grey; */
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  color: var(--primary);
+}
+.header .header-content .header-content-details{
+  width: 50%;
+}
+.header .header-content p {
+  font-size: 24px;
+}
+.header .header-content .header-buttons {
+  margin-top: 30px;
+
+}
+.header .header-content button {
+  padding: 14px 20px;
+  color: var(--primary);
+  border: 2px solid;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.header .header-content button:hover {
+  color: black;
+  background-color: var(--primary);
+}
+
+.header .header-content .contact-btn {
+  background-color: transparent;
+  margin-left: 10px;
+}
+.header .header-content .learn-btn {
+  background-color: var(--bgcolor);
+  border-color: var(--bgcolor);
+}
+.header .header-content .header-animate {
+  width: 30px;
+  height: 50px;
+  border: 2px solid var(--primary);
+  margin: 70px auto 0;
+  border-radius: 15px;
+}
+.header-animate div{
+  width: 5px;
+  height: 5px;
+  background-color: var(--primary);
+  border: 2px solid var(--primary);
+  border-radius: 50%;
+  margin: auto;
+  position: relative;
+  top: 20px;
+  transition: .5s all ease-in;
+}
+.header-animate div:hover{
+  top: 5px;
+}
+
+.container {
+  margin: 5% 5% 0;
+  /* background-color: red; */
+}
+.img {
+  width: 40%;
+  height: 100%;
+  /* background-color: blueviolet; */
+}
+.about-img {
+  float: left;
+}
+
+.content {
+  width: 50%;
+  padding-top: 1%;
+}
+.about-content {
+  float: right;
+}
+.container h2 {
+  margin-bottom: 30px;
+  font-size: 50px;
+  font-weight: 200;
+}
+.container p {
+  margin-bottom: 20px;
+}
+/* .location {
+  background-color: green;
+} */
+.location-img {
+  float: right;
+}
+.location-content {
+  float: left;
+}
+.clear-fix {
+  clear: both;
+}
+.baking {
+  text-align: center;
+}
+
+.baking-title h2 {
+  margin-bottom: 10px;
+}
+.baking-title p {
+  margin-bottom: 30px;
+}
+.baking h3 {
+  font-size: 24px;
+  font-weight: 500;
+}
+.baking-element {
+  width: 30%;
+  float: left;
+}
+.baking-margin {
+  margin-right: 5%;
+}
+.contact-map {
+  float: right;
+  width: 40%;
+  height: 100%;
+}
+.contact-map iframe{
+  width: 100%;
+}
+.contact-content {
+  float: left;
+  padding-top: 0;
+}
+.footer-bar {
+  background-color:var(--secondary-dark);
+  color: var(--secondary-light);
+  padding-bottom: 3%;
+  margin-top: 5%;
+  overflow: hidden;
+}
+
+.footer-element {
+  float: left;
+  width: 22%;
+}
+.footer-element li {
+  padding: 10px 0;
+}
+.footer-margin {
+  margin-right: 4%;
+}
+.footer-element h3 {
+  font-size: 22px;
+  font-weight: 200;
+  margin-bottom: 20px;
+  color: var(--primary);
+}
+.footer-contact-details {
+  background-image: url(../images/contact-details-map.png);
+  background-position: center;
+  background-size: cover;
+}
+.footer-contact {
+  background-color: var(--secondary-dark-footer);
+  padding: 20px 0;
+}
+
+.footer-contact-container {
+  padding-top: 2%;
+  width: 50%;
+  margin: auto;
+  text-align: center;
+  color:var(--secondary-light);
+}
+.footer-contact-container p {
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+.footer-contact-img {
+  width: 50%;
+  margin: auto;
+}
+
+.footer-element-hr li:not(:last-child) {
+  border-bottom: 1px solid var(--secondary-border);
+}
+
+.social-links{
+  display: flex;
+  justify-content: center;
+}
+.social-icon-container{
+  height: 40px;
+  width: 40px;
+  background-color: var(--secondary-dark);
+  border-radius: 50%;
+  margin-right: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.social-icon-container:hover{
+  color: var(--secondary-dark);
+  background-color: var(--secondary-light);
+}
+
+.icon-container{
+  height: 40px;
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--bgcolor);
+  border-radius: 50%;
+  color: var(--primary);
+  margin-right: 8px;
+}
+.contact li,.about li{
+  display: flex;
+  align-items: center;
+}
